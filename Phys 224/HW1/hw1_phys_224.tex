@@ -1,0 +1,78 @@
+% ===============================================
+% Phys 224: Thermal Physics          Autumn 2019
+% hw1_phys_224.tex
+% ===============================================
+\documentclass{article}
+\usepackage{geometry,amsmath,amsthm,amssymb,hyperref,textcomp,gensymb}
+\geometry{
+    letterpaper,
+    left=1in,
+    top=0.5in,
+}
+\begin{document}
+\large % please keep the text at this size for ease of reading.
+% -----------------------------
+%     Content
+% -----------------------------
+{\Large Pongpak Techagumthorn
+\hfill Phys 224: Thermal Physics}
+\begin{center}
+{\Large
+% -----------------------------
+%    HW Number
+% -----------------------------
+HW 1
+}
+\end{center}
+\vspace{0.1in}
+% ----------------------------------------------------
+\begin{enumerate}
+    \item [1.8]
+    \begin{enumerate}
+        \item Assumptions: Cold day = 0\degree C, Hot Day = 37\degree C
+            \begin{align*}
+                \alpha &= \frac{\Delta L / L}{\Delta T} \\
+                \alpha \Delta T L &= \Delta L \\
+                (1.1 \times 10^{-5})(37)(1000) &= 0.407
+            \end{align*}
+            Total expansion for a 1km steel beam is 0.407m or 40.7cm
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item The two metals that are laminated together have different coefficients of thermal expansion. This causes the laminated strip to curl and uncurl due to the metals expanding and contracting at slightly different rates.
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{equation*}
+                \alpha \equiv \frac{\Delta L / L}{\Delta T} \quad \beta \equiv \frac{\Delta V / V}{\Delta T}
+            \end{equation*}
+            \begin{align*}
+                V + \Delta V &= (L + \Delta L)^3 \\
+                &= L^3 + 3L^2 \Delta L + 3L {\Delta L}^2 + {\Delta L}^3 \\
+                V + \Delta V & \approx L^3 + 3L^2 \Delta L^{\ast} \\
+                &= V + 3V \frac{\Delta L}{L}\\
+                \Delta V &= 3V \frac{\Delta L}{L} \\
+                \frac{\Delta V}{V} &= 3 \frac{\Delta L}{L}
+            \end{align*}
+            \begin{equation*}
+                \beta = \frac{\Delta V / V}{\Delta T} = \frac{3 \frac{\Delta L}{L}}{\Delta T} = 3 \left(\frac{\frac{\Delta L}{L}}{\Delta T} \right) = 3 \alpha
+            \end{equation*}
+            \(^{\ast}\) For small \(\Delta L\), \(\Delta L^2 \approx 0\) and \(\Delta L^3 \approx 0\)
+    \end{enumerate}
+    % -----------------------------------------------
+    \vspace{0.1in}
+    % -----------------------------------------------
+    \item [1.10] Assumptions: Room = 10 m \(\times\) 10 m \(\times\) 3 m, Pressure = 1 atm = 101.3 \(\times 10^3\) Pa, Temperature = 293\degree K
+       \begin{align*}
+            PV &= NkT \\
+            \frac{PV}{kT} &= N \\
+            \frac{(101.3 \times 10^3)(300)}{(1.38 \times 10^{-23})(293)} &= 7.516 \times 10^{27}
+        \end{align*}
+        7.516 \(\times 10^{27}\) molecules of air in average room.
+    
+% ---------------------------------------------------
+%     End
+% ---------------------------------------------------
+\end{enumerate}
+\end{document}
