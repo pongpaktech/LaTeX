@@ -93,7 +93,9 @@
     \item [1.16]
     \begin{enumerate}
         \item
-            \(F = PA \quad \rho V = m\)
+            \begin{equation*}
+                F = PA \quad \rho V = m    
+            \end{equation*}
             \begin{align*}
                 F &= -mg \\
                 PA &= - \rho Vg \\
@@ -103,10 +105,67 @@
                 dP &= - \rho g dz \\
                 \frac{dP}{dz} &= - \rho g
             \end{align*}
-        \item 
-            \(\rho = N \frac{m}{V} \Rightarrow \rho = \frac{Pm}{kT} \\ 
-            \frac{dP}{dz} = - \rho g \Rightarrow \frac{dP}{dz} = - \frac{Pm}{kT} g\)
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{equation*}
+                \rho = N \frac{m}{V} \Rightarrow \rho = \frac{Pm}{kT}
+            \end{equation*}
+            \begin{equation*}
+                \frac{dP}{dz} = - \rho g \Rightarrow \frac{dP}{dz} = - \frac{Pmg}{kT}
+            \end{equation*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{equation*}
+                \frac{dP}{dz} = - \frac{Pmg}{kT} \Rightarrow \frac{dP}{P} = - \frac{mg}{kT} dz
+            \end{equation*}
+            \begin{align*}
+                \int \frac{dP}{P} &= \int - \frac{mg}{kT} dz \\
+                \ln (P) &= - \left(\frac{mg}{kT} z + C_1 \right) \\
+                e^{\ln (P)} &= e^{- \frac{mg}{kT}z} C_2 \\
+                P &= P_0 e^{- \frac{mg}{kT}z}
+            \end{align*}
     \end{enumerate}
+    % -----------------------------------------------
+    \vspace{0.1in}
+    % -----------------------------------------------
+    \item [1.19]
+        \(H_2\) mass \(m_H\) = 2.01588 g/mol, \(O_2\) mass \(m_O\) = 31.9988 g/mol
+        \begin{equation*}
+            v_{rms} \equiv \sqrt{\overline{v^2}} = \sqrt{\frac{3kT}{m}}
+        \end{equation*}
+        Gasses are in thermal equilibrium so T is constant.
+        \begin{equation*}
+            C_1 = \sqrt{3kT} \quad v_{rms} = C_1 \sqrt{\frac{1}{m}}
+        \end{equation*} 
+        \begin{equation*}
+            H_2: \sqrt{\frac{1}{m_H}} = \sqrt{\frac{1}{2.01588}} \quad O_2: \sqrt{\frac{1}{m_O}} = \sqrt{\frac{1}{31.9988}}
+        \end{equation*}
+        \(v_{rms}\) for \(H_2\) is faster since the average velocity is inversely proportional to the mass of the particles.
+         
+        The factor factor for the average velocity of \(H_2\) to \(O_2\) is:
+        \begin{align*}
+            \frac{\sqrt{1/m_H}}{\sqrt{1/m_O}} &= \frac{\sqrt{1/2.01588}}{\sqrt{1/31.9988}} \\
+            &= \sqrt{\frac{31.9988}{2.01588}} \approx 3.989
+        \end{align*}
+    % -----------------------------------------------
+    \vspace{0.1in}
+    % -----------------------------------------------
+    \item [1.25]
+        Water \(\left(H_2O\right)\) has a quadratic degree of freedom of 12
+        \begin{itemize}
+            \item 3 translational in \(\left(x, y, z\right)\)
+            \item 3 rotational in roll, pitch, and yaw
+            \item 6 vibrational, 2 each (1 potential and 1 kinetic) for the following vibrational modes:
+            \begin{itemize}
+                \item Symmetric stretching
+                \item Asymmetric stretching
+                \item Bending
+            \end{itemize}
+        \end{itemize}
 
 % ---------------------------------------------------
 %     End
