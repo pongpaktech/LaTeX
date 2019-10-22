@@ -3,13 +3,14 @@
 % hw_template_phys_224.tex
 % ===============================================
 \documentclass{article}
-\usepackage{geometry,amsmath,amsthm,amssymb,hyperref,textcomp,gensymb}
+\usepackage{geometry,amsmath,amsthm,amssymb,hyperref,textcomp,gensymb,siunitx, pgfplots}
 \geometry{
     letterpaper,
     left=1in,
     top=0.75in,
 }
 \begin{document}
+
 \large
 % -----------------------------
 %     Content
@@ -46,18 +47,180 @@
             \begin{equation*}
                 \overline{\Delta v_x} = \overline{v_f} - \overline{v_i} = - \overline{v_x} - \overline{v_x} = 2 \overline{v_x}
             \end{equation*}
+            \begin{align*}
+                \frac{PA \Delta t}{m \left(-2 \overline{v_x} \right)} &= -N \\
+                \frac{PA \Delta t}{2m \overline{v_x}} &= N
+            \end{align*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{align*}
+                \frac{PA \Delta t}{2m \overline{v_x}} &= N \\
+                \frac{P}{N} &= \frac{2m \overline{v_x}}{A \Delta t}
+            \end{align*}
             \begin{equation*}
-                \frac{PA \Delta t} \left({m \overline{v_x} \right)} = -N
+                \Delta t = \frac{2L}{\overline{v_x}}
+            \end{equation*}
+            \begin{align*}
+                \frac{P}{N} &= \frac{2m \overline{v_x}}{A \frac{2L}{\overline{v_x}}} \\
+                &= \frac{m \overline{{v_x}^2}}{V} \\
+                \frac{PV}{N} &= m \overline{{v_x}^2} \\
+                kT = \frac{PV}{N} &= m \overline{{v_x}^2} \\
+                kT &= m \overline{{v_x}^2} \\
+                \frac{kT}{m} &= \overline{{v_x}^2} \\
+                \sqrt{\frac{kT}{m}} &= \sqrt{\overline{{v_x}^2}} = \left(\overline{{v_x}^2} \right)^{\frac{1}{2}}
+            \end{align*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{align*}
+                \frac{dN}{dt} &= - \frac{AN}{2V} \sqrt{\frac{kT}{m}} \\
+                \frac{dN}{N} &= - \frac{A}{2V} \sqrt{\frac{kT}{m}} dt \\
+                \int \frac{1}{N} dN &= - \frac{A}{2V} \sqrt{\frac{kT}{m}} \int dt \\
+                \ln (N) &= - \frac{A}{2V} \sqrt{\frac{kT}{m}} t + C \\
+                e^{ln (N)} &= e^C e^{\left(- \frac{A}{2V} \sqrt{\frac{kT}{m}} t \right)} \\
+                N &= e^C e^{\left(- \frac{A}{2V} \sqrt{\frac{kT}{m}} t \right)}
+            \end{align*}
+            \begin{equation*}
+                \frac{1}{\tau} = \frac{A}{2V} \sqrt{\frac{kT}{m}}
+            \end{equation*}
+            \begin{equation*}
+                N = N_0 e^{- \frac{t}{\tau}}
             \end{equation*}
         % ------------------------------------------
         \vspace{0.05in}
         % ------------------------------------------
         \item
+            \begin{equation*}
+                \tau = \frac{2V}{A} \sqrt{\frac{m}{kT}}
+            \end{equation*}
+            Room Temp = 298\si{\degree\kelvin}, V = 1\si{\liter} = 0.001\si{\cubic\metre} = \SI{1e-3}{\cubic\metre}, A = 1\si{\square\milli\metre} = \SI{1e-6}{\square\metre} \\
+            Air = 78\% \(N_2\) + 21\% \(O_2\) + 1\% \(Ar\) \\
+            \(0.78 \times 2 \times 14.00674 + 0.21 \times 2 \times 15.9994 + 0.01 \times 39.948 = 28.97\)\si{\gram\per\mole} \\
+            \(m_{air} = 28.97 \times 10^{-3}/N_a = 4.81 \times 10^{-26}\)\si{\kilo\gram}
+            \begin{equation*}
+                \tau = \frac{2 \left(1 \times 10^{-3} \right)}{1 \times 10^{-6}} \sqrt{\frac{4.81 \times 10^{-26}}{\left(1.38 \times 10^{-23} \right)(298)}} = 6.32
+            \end{equation*}
+            \begin{center}
+            \(\tau = 6.32\)\si{\second}
+            \end{center}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            Lunar Command Module (LCM) Volume = 6.2\si{\cubic\metre} \\
+            LCM Hatch Size = 0.74\si{\metre} \(\times\) 0.86\si{\metre} = 0.63\si{\square\metre} \\
+            LCM Air = 100\% \(O_2\) \\
+            \(m_{O_2} = 2 \times 15.9994 / N_a = 5.31 \times 10^{-23}\)\si{\gram} \(= 5.31 \times 10^{-26}\)\si{\kilo\gram}
+            \begin{equation*}
+                \tau = \frac{6.2}{6.3} \sqrt{\frac{5.31 \times 10^{-26}}{\left(1.38 \times 10^{-23} \right)(298)}} = 0.035
+            \end{equation*}
+            \begin{center}
+                \(\tau = 0.035\)\si{\second}
+            \end{center}
     \end{enumerate}
     % -----------------------------------------------
     \vspace{0.1in}
     % -----------------------------------------------
-    \item [2]
+    \item [1.24]
+        Degree of freedom \(f = 6\), Temperature = 298\si{\degree\kelvin}
+        \begin{equation*}
+            U_{therm} = \frac{f}{2} NkT
+        \end{equation*}
+        \begin{equation*}
+            N_{Pb} = \frac{1}{207.2} \times 6.022 \times 10^{23} = 2.906 \times 10^{21}
+        \end{equation*}
+        \begin{align*}
+            U_{therm} &= \frac{f}{2} NkT \\
+            &= \left(\frac{6}{2} \right) \left(2.906 \times 10^{21} \right) \left(1.381 \times 10^{-23} \right) (298) \\
+            &= 35.878 \si{\joule}
+        \end{align*}
+    % -----------------------------------------------
+    \vspace{0.1in}
+    % -----------------------------------------------
+    \item [1.27]
+    \begin{enumerate}
+        \item
+            Exothermic chemical reactions such as a thermite reaction.
+        \item
+            Phase transitions and latent heat. 
+    \end{enumerate}
+    % -----------------------------------------------
+    \vspace{0.1in}
+    % -----------------------------------------------
+    \item [1.31]
+    \begin{enumerate}
+        \item 
+            Graph: \\
+            \begin{tikzpicture}
+                \begin{axis}
+                    [
+                        title={Pressure vs. Volume},
+                        xlabel={Pressure (Atm)},
+                        ylabel={Volume (Liter)},
+                        xmin=0, xmax=4,
+                        ymin=0, ymax=4,
+                        xtick={0,1,2,3},
+                        ytick={0,1,2,3},
+                    ]
+                    \addplot[
+                        color=blue,
+                        mark=square,
+                    ]
+                    coordinates {
+                        (1,1)(3,3)
+                    };
+                \end{axis}
+            \end{tikzpicture}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{equation*}
+                W = - \int^{V_f}_{v_i}{P(V)dV}
+            \end{equation*}
+            \begin{equation*}
+                P(V) = \mathrm{\frac{2atm}{2L}} V = \frac{101.3 \times 10^{3}\si{\pascal}}{0.001\si{\cubic\meter}} V = 101.3 \times 10^{6} V
+            \end{equation*}
+            \begin{align*}
+                W &= -\int^{3 \times 10^{-3}}_{1 \times 10^{-3}} {101.3 \times 10^{6} VdV} \\
+                &= -101.3 \times 10^{6} \int^{0.003}_{0.001} {VdV} \\
+                &= -101.3 \times 10^{6} \left[\frac{V^2}{2} \right]^{0.003}_{0.001} \\
+                &= -101.3 \times 10^{6} \left[\frac{0.003^2}{2} - \frac{0.001^2}{2} \right] \\
+                &= -405.2\si{\joule}
+            \end{align*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{equation*}
+                \Delta U = \frac{f}{2}NkT = \frac{f}{2}PV
+            \end{equation*}
+            \begin{align*}
+               \Delta U &= \frac{f}{2} \Delta (PV) \\
+               &= \frac{f}{2} \left(P_f V_f - P_i V_i\right)
+            \end{align*}
+            Degree of freedom \(f = 3\) for Helium at room temperature
+            \begin{align*}
+                \Delta U &= \frac{3}{2} \left( \left(303.9 \times 10^{3} \right)(0.003) - \left(101.3 \times 10^{3} \right)(0.001) \right) \\
+                &= \frac{3}{2} (810.4) \\
+                \Delta U &= 1215.6\si{\joule} 
+            \end{align*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{equation*}
+                Q = \Delta U - W = 1215.6 - -405.2 = 1621\si{\joule}
+            \end{equation*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            Add a lot of heat in a short amount of time, such as an explosion.
+    \end{enumerate}
 % ---------------------------------------------------
 %     End
 % ---------------------------------------------------
