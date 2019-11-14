@@ -3,7 +3,7 @@
 % hw_template_phys_224.tex
 % ===============================================
 \documentclass{article}
-\usepackage{geometry,amsmath,amsthm,amssymb,hyperref,textcomp,gensymb,siunitx, pgfplots}
+\usepackage{geometry,amsmath,amsthm,amssymb,hyperref,textcomp,gensymb,siunitx,pgfplots,chemfig}
 \geometry{
     letterpaper,
     left=1in,
@@ -220,6 +220,280 @@
         % ------------------------------------------
         \item
             Add a lot of heat in a short amount of time, such as an explosion.
+    \end{enumerate}
+    % -----------------------------------------------
+    \vspace{0.1in}
+    % -----------------------------------------------
+    \item [1.34]
+    \begin{enumerate}
+        \item
+            \begin{equation*}
+                W = \int_{V_i}^{V_f} P(V) dV \quad U = \frac{f}{2}NkT
+            \end{equation*}
+            \begin{equation*}
+                PV = NkT \quad f=5
+            \end{equation*}
+            \begin{equation*}
+                U = \frac{5}{2}PV
+            \end{equation*}
+            \begin{equation*}
+                \Delta U = \frac{5}{2} \Delta PV = \frac{5}{2} P \Delta V = Q = W
+            \end{equation*}
+            \begin{equation*}
+                Q = \Delta U - W
+            \end{equation*}
+            \\ \\
+            \begin{align*}
+                W_A &= - \int_{V_1}^{V_1} (P_2 - P_1) dV \\
+                &= -(P_2 - P_1)(V_1 - V_1) \\
+                &= 0
+            \end{align*}
+            \begin{equation*}
+                \Delta U_A = \frac{5}{2} (P_2 - P_1)(V_1)
+            \end{equation*}
+            \begin{align*}
+                Q_a &= \frac{5}{2} (P_2 - P_1)(V_1) - 0 \\
+                &= \frac{5}{2} (P_2 - P_1)(V_1)
+            \end{align*}
+            \\ \\
+            \begin{align*}
+                W_B &= - \int_{V_1}^{V_2} P_2 dV \\
+                &=  -P_2(V_2 - V_1)
+            \end{align*}
+            \begin{equation*}
+                \Delta = \frac{5}{2} (P_2)(V_2 - V_1)
+            \end{equation*}
+            \begin{equation*}
+                Q_B = \frac{5}{2} (P_2)(V_2 - V_2) + P_2(V_2 - V_1)
+            \end{equation*}
+            \\ \\
+            \begin{align*}
+                W_C &= -\int_{V_2}^{V_2} (P_1 - P_2) dV \\
+                &= - (P_1 - P_2)(V_2 - V_2) = 0
+            \end{align*}
+            \begin{equation*}
+                \Delta U_C = \frac{5}{2} (P_1 - P_2)(V_2)
+            \end{equation*}
+            \begin{align*}
+                Q_C &= \frac{5}{2} (P_1 - P_2)(V_2) - 0 \\
+                &= \frac{5}{2} (P_1 - P_2)(V_2)
+            \end{align*}
+            \\ \\
+            \begin{align*}
+                W_D &= - \int_{V_2}^{V_1} P_1 dV \\
+                &= - P_1(V_1 - V_2)
+            \end{align*}
+            \begin{equation*}
+                \Delta U_D = \frac{5}{2}(P_1)(V_1 - V_2)
+            \end{equation*}
+            \begin{equation*}
+                Q_D = \frac{5}{2} (P_1)(V_1 - V_2) + P_1(V_1 - V_2)
+            \end{equation*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{enumerate}
+                \item [A]
+                    Heat is added to the system while the piston is fixed.
+                \item [B]
+                    Heat Is being added to the system while the piston is pilled out to maintain constant pressure
+                \item [C]
+                    Heat is being removed from the system while the piston is fixed
+                \item [D]
+                    Heat is being removed from the system while the piston is pushed in to maintain pressure
+            \end{enumerate}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{align*}
+                W_{total} &= W_A + W_B + W_C + W_D \\
+                &= 0 + -P_2(V_2 - V_1) + 0 + -P_1(V_1 - V_2) \\
+            \end{align*}
+            \begin{equation*}
+                V_2 - V_1 = \Delta V
+            \end{equation*}
+            \begin{align*}
+                W_{total} &= -P_2 \Delta V + P_1 \Delta V \\
+                &= -(P_2 \Delta V - P_1 \Delta V)
+            \end{align*}
+            Work is not zero because the volume changes and because the work along B is larger than the work along D.
+            \\ \\
+            \begin{align*}
+                Q_{total} &= Q_A + Q_B + Q_C + Q_D \\
+                &= \frac{5}{2} (P_2 - P_1)V_1 + \left[ \frac{5}{2} P_2(V_2 - V_1) + P_2(V_2 - V_1) \right] \\
+                & \quad + \frac{5}{2} (P_2 - P_1)V_2 + \left[ \frac{5}{2} P_1(V_1 - V_2) + P_1(V_1 - V_2) \right] \\
+                &= P_2(V_2 - V_1) + P_1(V_1 - V_2) \\
+                &= P_2 \Delta V - P_1 \Delta V
+            \end{align*}
+            During B and D heat is has to be added or removed to keep T constant. There is also more heat being added during B than removed during D because of greater pressure at B. This leads to a non zero total heat.
+            \\ \\
+            \begin{align*}
+                \Delta U_{total} &= \Delta U_A + \Delta U_B + \Delta U_C + \Delta U_D \\
+                &= \frac{5}{2} (P_2 - P_1)(V_1) + \frac{5}{2} (P_2)(V_2 - V_1) + \frac{5}{2} (P_1 - P_2)(V_2) + \frac{5}{2} (P_1)(V_1 - V_2) \\
+                &= 0
+            \end{align*}
+            The final change in internal energy at the end of the cycle since \(P_i\) and \(V_i\) are the same as \(P_f\) and \(V_f\).
+    \end{enumerate}
+    % -----------------------------------------------
+    \vspace{0.1in}
+    % -----------------------------------------------
+    \item [1.37]
+        \begin{equation*}
+            VT^{\frac{f}{2}} = constant \quad PV = NkT
+        \end{equation*}
+        \begin{align*}
+            T &= \frac{PV}{Nk} \\
+            T^{\frac{f}{2}} &= \left( \frac{PV}{Nk} \right)^{\frac{f}{2}} \\
+            VT^{\frac{f}{2}} &= V \left( \frac{PV}{Nk} \right)^{\frac{f}{2}} \\
+            &= V^{\left(1 + \frac{f}{2} \right)} P^{\frac{f}{2}} \left( \frac{1}{Nk} \right)^{\frac{f}{2}} \\
+            constant &= V^{\left(1 + \frac{f}{2} \right)} P^{\frac{f}{2}} \left( \frac{1}{Nk} \right)^{\frac{f}{2}} \\
+            \frac{constant}{\left( \frac{1}{Nk} \right)^{\frac{f}{2}}} &= V^{\frac{2 + f}{2}} P^{\frac{f}{2}}
+        \end{align*}
+        N, K, and f are constant
+        \begin{align*}
+            constant &= V^{\frac{2 + f}{2}} P^{\frac{f}{2}} \\
+            constant^{\left( \frac{2}{f} \right)} &= V^{\frac{2}{f} \left(\frac{2 + f}{2} \right)} P^{\frac{2}{f}\frac{f}{2}} \\
+            constant &= V^{\frac{2 + f}{f}} P \quad \gamma = \frac{2 + f}{f} \\
+            constant &= V^\gamma P
+        \end{align*}
+    % -----------------------------------------------
+    \vspace{0.1in}
+    % -----------------------------------------------
+    \item [1.37]
+        Biodiesel:
+        \begin{center}
+            \chemfig[angle increment=30]{-[1]-[-1]-[1]-[-1]-[1]-[-1]-[1]-[-1]-[1](=[:90]O)-[-1]O-[1]}
+        \end{center}
+        Degree of freedom \(f = 6\), \(T_i = 300\)\si{\degree\kelvin}
+        \begin{align*}
+            V_f T_f^{\frac{f}{2}} &= V_i T_i^{\frac{f}{2}} \\
+            \frac{1}{20} T_f^3 &= (1) 300^3 \\
+            T_f^3 &= (20) 300^3 \\
+            T_f &= \sqrt[3]{(20) 300^3} \\
+            T_f &= 814\si{\degree\kelvin} = 514\si{\celsius}
+        \end{align*}
+        Flash point of biodiesel \(\approx 130\)\si{\celsius}
+    % -----------------------------------------------
+    \vspace{0.1in}
+    % -----------------------------------------------
+    \item [1.41]
+    \begin{enumerate}
+        \item
+            \begin{equation*}
+                Q = mc \Delta T \quad c_{water} = 4.2 \frac{J}{g\si{\celsius}}
+            \end{equation*}
+            \begin{equation*}
+                Q_{water} = (250)(4.2)(4) = 4200J
+            \end{equation*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{equation*}
+                Q_{metal} = -Q_{water} = -4200J
+            \end{equation*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{align*}
+                C_metal &= \frac{Q_{metal}}{\Delta T} \\
+                &= \frac{-4200}{-4} \\
+                &= 1050 \frac{J}{\si{\celsius}}
+            \end{align*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{align*}
+                C_metal &= \frac{C_{metal}}{m} \\
+                &= \frac{1050}{100} \\
+                &= 10.5 \frac{J}{g \si{\celsius}}
+            \end{align*}
+    \end{enumerate}
+    % -----------------------------------------------
+    \vspace{0.1in}
+    % -----------------------------------------------
+    \item [1.54]
+    \begin{enumerate}
+        \item
+            \begin{align*}
+                W &= mgh \\
+                &= (60)(9.81)(1500)
+                &= 882900J
+            \end{align*}
+            \begin{equation*}
+                100 kcal = 418400 J
+            \end{equation*}
+            \begin{equation*}
+                \frac{882900}{418400 \times 0.25} = 8.441 oz = 239.3 g
+            \end{equation*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{equation*}
+                Q = (8.441)(418400) \left( \frac{3}{4} \right) = 2648785.8 J
+            \end{equation*}
+            \begin{align*}
+                Q &= mc \Delta T \\
+                \Delta T &= \frac{Q}{mc_{water}} \\
+                &= \frac{2678785.8}{(60000)(4.2)} \\
+                \Delta T &= 10.5\si{\celsius}
+            \end{align*}
+        % ------------------------------------------
+        \vspace{0.05in}
+        % ------------------------------------------
+        \item
+            \begin{equation*}
+                L = \frac{Q}{m} \quad m = \frac{Q}{L}
+            \end{equation*}
+            \begin{equation*}
+                L = 580 \frac{cal}{g} = 2426.72 \frac{J}{g}
+            \end{equation*}
+            \begin{equation*}
+                m = \frac{2648785.8}{2426.72} = 1092 g
+            \end{equation*}
+    \end{enumerate}
+    % -----------------------------------------------
+    \vspace{0.1in}
+    % -----------------------------------------------
+    \item [2.1]
+    \begin{enumerate}
+        \item
+        Table 1: \\
+            \begin{center}
+                \begin{tabular}{ |c|c|c|c| }
+                    \hline
+                    Coin 1 & Coin 2 & Coin 3 & Coin 4 \\
+                    \hline
+                    H & H & H & H \\
+                    T & T & T & T \\
+                    H & T & T & T \\
+                    T & H & T & T \\
+                    T & T & H & T \\
+                    T & T & T & H \\
+                    H & H & T & T \\
+                    T & H & H & T \\
+                    T & T & H & H \\
+                    H & T & T & H \\
+                    T & H & T & H \\
+                    H & T & H & T \\
+                    H & H & H & T \\
+                    H & H & T & H \\
+                    H & T & H & H \\
+                    T & H & H & H \\
+                    \hline
+                \end{tabular}
+            \end{center}
+        \item
+            0 heads 1/16 \\
+            1 heads 4/16 \\
+            2 heads 6/16 \\
+            3 heads 4/16 \\
+            4 heads 1/16
     \end{enumerate}
 % ---------------------------------------------------
 %     End
