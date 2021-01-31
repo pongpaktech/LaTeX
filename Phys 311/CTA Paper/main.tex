@@ -33,6 +33,22 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt]{article}
+\usepackage{geometry}
+ \geometry{
+ letterpaper,
+ total={7.25 in, 9.375 in},
+ left=0.625 in,
+ top=0.875 in,
+ headsep=14 pt,
+ headheight=14 pt,
+ }
+
+\usepackage{fancyhdr}
+ \pagestyle{fancy}
+ \fancyhf{}
+ \lhead{CTA Proposal}
+ \rhead{SEGUE 1: An Unevolved Fossil Galaxy from the Early Universe}
+ \rfoot{Techagumthorn \thepage}
 
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
@@ -41,6 +57,8 @@
 \usepackage{graphicx}
 \usepackage{varioref}
 \usepackage{float}
+\usepackage{amssymb}
+
 
 \begin{document}
 
@@ -69,7 +87,7 @@
 	
 	\HRule\\[0.4cm]
 	
-	{\huge\bfseries Segue 1: An Unevolved Fossil Galaxy from the Early Universe}\\[0.4cm] % Title of your document
+	{\huge\bfseries SEGUE 1: An Unevolved Fossil Galaxy from the Early Universe}\\[0.4cm] % Title of your document
 	
 	\HRule\\[1.5cm]
 	
@@ -100,78 +118,38 @@
 %----------------------------------------------------------------------------------------
 
 \section{Topic Background}
+When studying the early universe scientists commonly seek out stars with low metal content. Locked inside these stars
+is information about the physical and chemical conditions that led to the formation of the star. The low metallicity of
+these stars, specifically low $\left[ Fe / H \right]$ values and high $\left[ \alpha / Fe \right]$ values, indicate that
+the stars were formed in the early universe. By comparing the quantity of $\alpha$-elements, iron, and hydrogen we can map the
+timescales of nucleosynthesis to the timescales of different types of supernovae. The $\alpha$-elements are carbon, oxygen, neon,
+magnesium, silicon, sulfur, argon, and calcium.
 
+The earliest supernovae events in the universe were core-collapse supernovae of Massive stars. Massive stars produce large
+amounts of $\alpha$-elements during their stellar evolution and core-collapse explosion. Massive stars have short lifetimes
+of less than 10 million years. Heavy metals, such as iron, appeared later in the astronomical timeline as a byproduct of Type Ia
+supernovae. Type Ia supernovae originate from binary star systems containing a white dwarf stars. These binary systems have much
+longer lifetimes, on the order of $10^8$ years, before collapsing into a supernova. These substantially different timelines allow
+scientists to approximately date the relative timing of nucleosynthesis in early stars.
 
-\section{Motivation}
-The motivation behind this project was the thought that, if there was a platform where we can find the workers needed for our day to day living. If we needed an electrician we don't have to go looking for an electrician but the only thing that we have to do is just make a post, where many professionals (electrician) can find you and have your work done with the best price.
-\clearpage
+For decades scientists looked at low metal stars in the halo of the Milky Way to study the early universe. In the past decade efforts
+such as the Sloan Digital Sky Survey (SDSS) have uncovered a plethora of very dim dwarf spheroidal (dSph) galaxies and ultra faint dwarfs
+with total luminosities in the range of \(10^{5} L_{\odot} \lesssim L \lesssim 10^{7} L_{\odot}\) and \(L \lesssim 10^5 L_{\odot}\),
+respectively. Within this pool of dSph and ultra faint dwarf galaxies scientists discovered a small handful of ultra faint dwarf galaxies
+that showed extremely low $\left[ Fe / H \right]$ values. In this small handful one galaxy, SEGUE 1 stood out from the rest.
+SEGUE 1 stood out since it's stars show increasing metallicity but do not exhibit decreasing $\left[\alpha / Fe\right]$ ratios.
+This would indicate that SEGUE 1 dates back to the very early universe predating Type Ia supernovae events.
 
 \section{Novelty}
 
-What is new about this project?
-
-\begin{itemize}
-\item Get jobs that are posted daily
-\item Get only the job suggestions that match your skills
-\item Manage post and contracts more efficiently
-\item Bill is calculated on daily basis
-\end{itemize}
-
-\clearpage
-
-\section{Sample Picture}
-\includegraphics[scale=0.5]{Untitled+design+(2).png}
-
-\clearpage
-
-\section{Tools Used}
-
-\begin{table}[H]
-\centering
-\caption{Tools used for the project}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\textbf{Tool} & \textbf{Purpose}         \\ \hline
-Xampp         & For creating a localhost \\ \hline
-phpMyAdmin    & For hosting the database \\ \hline
-MySQL    	  & As a database system \\ \hline
-PHP    		  & For server side handling \\ \hline
-Javascript    & For AJAX call and form validation \\ \hline
-Bootstrap     & For responsive interface \\ \hline
-CSS \& HTML   & For designing basic template \\ \hline
-\end{tabular}
-\end{table}
-
-\clearpage
-
-\section{Challenges Faced}
-These are the challenges we faced while doing the project:
-\begin{itemize}
-\item \textbf{Challenge 1: } While implementing auto-complete we couldn't get data dynamically.
-\item \textbf{Challenge 2: } Mailing with PHPMailer didn't work at first due to authorization problem and some protocols.
-\item \textbf{Challenge 3: } Sending/receiving data in the background with AJAX was quite confusing at first.
-\item \textbf{Challenge 4: } Calculating fare based on time interval was tough to implement at first.
-\end{itemize}
-
-\clearpage
-
-\section{Applications}
-
-\clearpage
+The authors of this paper made new spectrography measurements of 6 stars within SEGUE 1 focusing on the chemical enrichment process
+to better understand star formation in the very early universe. 
 
 \section{Future Work}
-\begin{itemize}
-\item Develop a mobile application based on this project.
-\item Adding support for map for direction and estimated time of arrival.
-\item One click to call feature.
-\item Enabling professionals active time period.
-\item Enabling individual messaging and replying to comments.
-\item Adding automated fare calculation based on some factor (e.g. time, distance).
-\item Discount will be provided to consumers.
-\end{itemize}
 
 \clearpage
+
+\section{References}
 
 \end{document}
 
