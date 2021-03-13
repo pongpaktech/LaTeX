@@ -158,7 +158,7 @@
 
 \begin{document}
 
-\title{Report On:\\SEGUE-1: An Unevolved Fossil Galaxy from the Early Universe}
+\title{Report On:\\SEGUE-1: An Unevolved Fossil Galaxy from the Early Universe - Frebel, Simon \& Kirby}
 
 %% LaTeX will automatically break titles if they run longer than
 %% one line. However, you may use \\ to force a line break if
@@ -250,7 +250,7 @@
 %% tied to the reference list via symbolic KEYs. The KEY corresponds
 %% to the KEY in the \bibitem in the reference list below. 
 
-\section{Topic Background} \label{sec:background}
+\section{Background} \label{sec:background}
 
 When studying the early universe scientists commonly seek out stars that were formed early on in the universe.
 Locked inside these stars are clues about the physical and chemical conditions that led to the formation of the star.
@@ -270,6 +270,15 @@ nucleosynthesis. Neutron capture nucleosynthesis happens during r-process supern
 population III supermassive stars. During each of these neutron capture nucleosynthesis events approximately
 $10^{-4} M_\odot$ of neutron capture elements are released into the ISM.
 
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \begin{center}
+        \includegraphics[width=0.29\textwidth]{location.jpg}
+    \end{center}
+    \caption{Black dots show the location of surveyed stars within SEGUE-1. The seven dots with red borders indicate the six stars
+    observed in this study as well as one star that was observed in a previous study}
+    \label{fig:loc}
+\end{wrapfigure}
+
 The low metallicity of early stars, specifically stars with high [$\alpha$/Fe] and low [Fe/H] values, indicate that their
 nucleosynthesis occurred during a period after the first round of core-collapse supernovae but before large numbers of
 Type Ia supernovae events. For decades scientists looked early stars in the halo of the Milky Way to study the early universe.
@@ -287,7 +296,8 @@ This would indicate that the star formation phase in SEGUE-1 occurred before mos
 also indicates that there was likely only one star formation phase within the galaxy.
 \section{Novelty and Methods} \label{sec:novelty}
 
-The authors of this paper made new spectrography measurements of six stars within SEGUE-1 using the Magellan/MIKE and Keck/HIRES
+The authors of this paper made new spectrography measurements of six stars within SEGUE-1, highlighted in figure ~\ref{fig:loc},
+ using the Magellan/MIKE and Keck/HIRES
 spectrographs focusing on the chemical enrichment process to better understand star formation in the very early universe. The six
 stars that were chosen were the brightest stars in SEGUE-1 which allowed for high resolution spectrography. Using the spectrographs
 the authors collected data on the abundance of iron (Fe I and Fe II), carbon, $\alpha$-elements, and neutron-capture elements.
@@ -304,7 +314,7 @@ noise ratio (S/N) was only moderate with values between 20 and 50
 \section{Results and Discussion} \label{sec:dicussion}
 
 With the high resolution spectrograph data the authors were able to extrapolate the abundances of the various elements inside the stars.
-In figure 1 the authors plotted the spectra of the 6 stars compared to two other known stars, the ultra low metal $CD -38^{\circ}245$
+In figure ~\ref{fig:spectra} the authors plotted the spectra of the 6 stars compared to two other known stars, the ultra low metal $CD -38^{\circ}245$
 and the very bright, and much younger, Arcturus. The plots are listed in ascending order of metallicity from top to bottom.
 
 \begin{figure}[!h]
@@ -322,7 +332,7 @@ This indicated that there was at most one or maybe two Type Ia supernova that en
 contrasts the trend found in younger galaxies where there would be a clear trend in increasing metallicity and increasing
 iron abundance in the stellar population as they evolve alongside energetic supernovae events.
 
-Using the spectrography data the authors also plotted abundance ratios [X/Fe] relative to the iron abundance [Fe/H] for the elements
+Using the spectrography data the authors also plotted in figure ~\ref{fig:elements} the abundance ratios [X/Fe] relative to the iron abundance [Fe/H] for the elements
 that were measured. The dashed line at [X/Fe] = 0 indicates the ratio of the element in our Sun with positive values meaning higher
 abundance and lower values indicating lower abundance, on a log scale. Notice that in all of the SEGUE-1 stars the abundance of
 $\alpha$-elements such as Mg, Si, Ca, and Ti, are all above that of the Sun. Elements that are synthesized by other processes that
@@ -346,11 +356,12 @@ occur later in the timeline such as Al, Cr, and Mn, have consistent abundances l
     \label{fig:enrich}
 \end{figure}
 
-Another indication of SEGUE-1's age is the enhanced [$\alpha$/Fe] values found in all the measured stars that are consistent with each other
-and the initial birth cloud. Figure 3 shows enrichment behavior plots, [Fe/H] vs. [$\alpha$/Fe], for MW Halo stars, classical dSph galaxy stars, and SEGUE-1 stars.
-The top plot in fig. 3 shows the general trend of how classical dSph galaxies and MW Halo stars will appear on the enrichment behavior plot.
-The middle plot shows the spread of MW Halo stars which have a plateau in the [$\alpha$/Fe] until [Fe/H] $\approx -1$ at which point
-the [$\alpha$/Fe] approaches 0 where [Fe/H] is almost at 0. The bottom plot of fig. 3 shows the enrichment behavior plot for dSph galaxy
+Another indication of SEGUE-1's age is the enhanced [$\alpha$/Fe] values found in all the measured stars that are consistent with 
+each other and the initial birth cloud. Figure ~\ref{fig:enrich} shows enrichment behavior plots, [Fe/H] vs. [$\alpha$/Fe],
+for MW Halo stars, classical dSph galaxy stars, and SEGUE-1 stars. The top left plot in fig. ~\ref{fig:enrich} shows the general 
+trend of how classical dSph galaxies and MW Halo stars will appear on the enrichment behavior plot.
+The top right plot shows the spread of MW Halo stars which have a plateau in the [$\alpha$/Fe] until [Fe/H] $\approx -1$ at which point
+the [$\alpha$/Fe] approaches 0 where [Fe/H] is almost at 0. The bottom plot of fig. ~\ref{fig:enrich} shows the enrichment behavior plot for dSph galaxy
 stars (small black circles), the measured stars from SEGUE-1 (large red filled in circles from this article, and red crosshair from
 previous papers), and some other candidate stars (blue square, green circles, and magenta circles). In this bottom plot we can see that
 the classical dSph stars and some of the other candidate stars have a plateau but do slope down towards the [$\alpha$/Fe] = 0 line.
@@ -362,19 +373,61 @@ enrichment of the birth cloud there were no other enrichment events, such as typ
     \begin{center}
         \includegraphics[width=0.38\textwidth]{neutron_cap.jpg}
     \end{center}
-    \caption{Birds}
+    \caption{Neutron-capture element abundance [Sr/H] and [Ba/H] within the six observed SEGUE-1 stars in this study 
+    (filled in red circles), one previously studied SEGUE-1 star (empty red circle), MW Halo stars (small black dots),
+    and the other candidate stars (cyan, green, and blue markers). The light dotted line at [X/H] = 0 represents the abundance
+    of the respective element within the sun and the bold dashed line represents the average abundance of the respective element
+    within the observed SEGUE-1 stars.}
     \label{fig:neutron_cap}
 \end{wrapfigure}
 
-The final indicator of SEGUE-1's old age is the low abundance of neutron-capture elements in SEGUE's non-binary system stars,
-which total to less than \(\sim 10^{-7} M_{\odot}\) for each element, indicate that there were no neutron-capture element producing
-process, which produce \(\sim 10^{-4} M_{\odot}\) of neutron-capture elements per event, that occurred during the star formation phase.
+The final indicator of SEGUE-1's old age is the low abundance of neutron-capture elements in SEGUE's non-binary system stars.
+Outside of binary star systems neutron-capture elements are synthesized in events such as r-process events and 
+population III supermassive stars undergoing s-processes nucleosynthesis ~\cite{Truran2002}. Population III stars are believed to exist in the 
+very early universe but have not been directly observed while r-process events can be observed from mergers of neutron stars or
+type II supernovae ~\cite{Truran2002}. The authors looked specifically at Sr and Ba for neutron capture elements. In figure ~\ref{fig:neutron_cap} 
+we see neutron-capture element abundances [Sr/H]
+and [Ba/H] for MW Halo stars, classical dSph galaxy stars, and SEGUE-1 stars. The spread is quite wide with a number of stars having
+neutron-capture element abundances equal to, and even greater, than the Sun as well as stars with neutron-capture element abundances
+almost to [X/H] = -6. We can see that one of the SEGUE-1 stars observed in this study has a neutron-capture element abundance within
+[X/H] $\pm 0.5$ of our Sun while the other five observed in this study, as well as the one observed in a previous study, much lower at
+around [Sr/H] $\approx -5$ and [Ba/H] $\approx -4.5$. The total abundance of neutron capture elements within the lower six SEGUE-1 stars,
+five from this study plus one from the previous study, total to less than \(\sim 10^{-7} M_{\odot}\) for each element, which is orders
+of magnitude lower than the \(\sim 10^{-4} M_{\odot}\) released by a single neutron-capture element producing event. This low abundance
+indicates that aside from the neutron-capture elements released in the very early universe no other neutron-capture element synthesis
+occurred within SEGUE-1.
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \begin{center}
+        \includegraphics[width=0.38\textwidth]{carbon.jpg}
+    \end{center}
+    \caption{Neutron-capture element abundance [Sr/H] and [Ba/H] within the six observed SEGUE-1 stars in this study 
+    (filled in red circles), one previously studied SEGUE-1 star (empty red circle), MW Halo stars (small black dots),
+    and the other candidate stars (cyan, green, and blue markers). The light dotted line at [X/H] = 0 represents the abundance
+    of the respective element within the sun and the bold dashed line represents the average abundance of the respective element
+    within the observed SEGUE-1 stars.}
+    \label{fig:carbon}
+\end{wrapfigure}
+
+In addition to confirming the age of the SEGUE-1 galaxy the authors also made some discoveries regarding chemical composition of early
+stars. Figure ~\ref{fig:carbon} shows the carbon abundance [C/H] for the observed SEGUE-1 stars as well as other candidate stars and
+MW Halo stars. We can see that 3 of the SEGUE-1 stars observed in this paper, as well as the one observed previously show enhanced levels
+of carbon. These carbon enhanced stars are observed to be the the four lowest mass stars out of the seven SEGUE-1 stars and indicates the
+importance of carbon in the enrichment process of early stars.
+
+Additionally the authors observed a large range of iron abundance within the SEGUE-1 stars spanning over two orders of magnitude between
+[Fe/H] = -1.4 to [Fe/H] = -3.8. this large range in combination with the relative consistency in metallicity of the stars indicates that
+the distribution of iron within the intergalactic and interstellar medium was inhomogeneous in the early universe, around the time of
+star formation within SEGUE-1
 
 \section{Future Work} \label{sec:future}
 
-Future research points to observing a larger portion of SEGUE 1 stars. The six stars that were observed in this paper were deemed to
-be the brightest in the ultra faint dwarf galaxy and only allowed for a moderate S/N values between 20 and 46. In order to observe the other, dimmer,
-stars in SEGUE 1 we would require better telescopes to overcome the noise.
+Future research points to observing a larger portion of SEGUE 1 stars. The six stars that were observed in this paper, plus the 
+star observed in a previous study, were deemed to be the brightest in the ultra faint dwarf galaxy with magnitudes of $\sim 19$ mag.
+These seven SEGUE-1 stars were the only ones that scientists were able to capture sufficiently high resolution spectra for. These seven
+only represent a small sample 
+
+\newpage
 
 %% For this sample we use BibTeX plus aasjournals.bst to generate the
 %% the bibliography. The sample63.bib file was populated from ADS. To
