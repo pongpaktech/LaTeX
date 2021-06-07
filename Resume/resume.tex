@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Pongpak Techagumthorn} & PongpakTech@gmail.com\\
+  17822 40th PL W & (425) 753 2205 \\
+  Lynnwood, WA 98037 & linkedin.com/in/pongpak-techagumthorn/ \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Washington Bothell}{Bothell, WA}
+      {B.S in Physics}{(exp.) June 2021}
+      \resumeItemListStart
+        \resumeItem{Dean's List}{Spring 2020}
+        \resumeItem{Awards}{Awarded Excellence in Experimental Physics by Dr. Subramanian Ramachandran on May, 28th 2021}
+        \resumeItem{Relevant Courses}{Thermal Physics, Statics, Dynamics, Intro to 3D modeling and analysis, Computational Physics,
+          Condensed Matter Physics, Mathematical Physics, Experimental Physics, Electromagnetism, Astrophysics, Quantum Mechanics}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+    \textbf{Software}{: Solidworks, Autodesk Inventor, Autodesk Fusion 360, Autodesk HSM, SketchUp, Microsoft Office} \\
+    \textbf{Programming Languages}{: Java, HTML, CSS, LaTeX , Python, MatLab} \\
+    \textbf{Machines}{: 3D Printer, Laser Cutter, Lathe, Mill, Bandsaw, Drill Press, CNC Milling, MIG Welding }
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {UW Bothell collaboratory (Formerly UW Bothell Makerspace)}{Bothell, WA}
+      {Student staff member}{Autumn 2019 - Present}
+      \resumeItemListStart
+        \item{
+          Trained UW Bothell students, faculty, and staff on equipment usage and safety protocols
+        }
+        \item{
+          Provided technical consultation for makerspace user projects
+        }
+        \item{
+          Developed safety manuals and standard operating procedures for makerspace equipment
+        }
+        \item{
+          Led small and large group orientation sessions for incoming students and community partners
+        }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {UW Bothell TrickFire Robotics Team}{Bothell, WA}
+      {Mechanical Design Lead}{Summer 2017 - April 2021}
+      \resumeItemListStart
+        \item{
+          Worked in a medium sized team setting to design and manufacture a robot for NASA’s annual Robotic Mining Competition
+        }
+        \item{
+          Utilized Soldiworks CAD software to design robot and prepare files for manufacturing
+        }
+        \item{
+          Ran basic Solidworks FEA simulations to evaluate robot design
+        }
+        \item{
+          Employed manufacturing skills to machine robot parts on manual mills and lathes
+        }
+        \item{
+          Ensured interoperability of the mechanical system with electrical and software systems
+        }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Semiconductor Materials for Ultra High Frequency Transistors}{April 2021 - Present}
+      {UW Bothell}{}
+        \resumeItemListStart
+          \item{
+            Developed transistor models to run simulations of transistor devices in an LTSpice environment
+          }
+          \item{
+            Developed test procedures to compare ultra high frequency behavior of semiconductor materials
+          }
+          \item{
+            Authored a scientific paper on the findings of this project and presented the findings at
+            the UW Bothell Spring 2021 Capstone Colloquium
+          }
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {UW Bothell ASME Hackathon}{2017}
+      {UW Bothell}{}
+        \resumeItemListStart
+          \item{
+            Worked with the UW Bothell ASME Chapter to run a Hackathon revolving around the campus garden
+          }
+          \item{
+            Oversaw the purchasing of tools and materials for the hackathon
+          }
+          \item{
+            Ensured hackathon participants were using tools and materials in a safe manner
+          }
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
