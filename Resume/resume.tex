@@ -40,9 +40,8 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\normalsize}
+{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
@@ -53,10 +52,18 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{0pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingextra}[2]{
+  \vspace{0pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      % \textbf{#1} & #2 \\
+      {\small#1} & {\small #2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -70,7 +77,7 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
@@ -89,69 +96,108 @@
     \resumeSubheading
       {University of Washington Bothell}{Bothell, WA}
       {B.S in Physics}{June 2021}
-      \resumeItemListStart
-        \resumeItem{Dean's List}{Spring 2020}
-        \resumeItem{Awards}{Excellence in Experimental Physics by Dr. Subramanian Ramachandran - May, 28th 2021}
-%       \resumeItem{Relevant Courses}{Thermal Physics, Statics, Dynamics, Intro to 3D modeling and analysis, Computational Physics,
-%         Condensed Matter Physics, Mathematical Physics, Experimental Physics, Electromagnetism, Astrophysics, Quantum Mechanics}
-      \resumeItemListEnd
+      % \resumeItemListStart
+      %   \resumeItem{Dean's List}{Spring 2020}
+      %   \resumeItem{Awards}{Excellence in Experimental Physics by Dr. Subramanian Ramachandran - May, 28th 2021}
+      %   \resumeItem{Relevant Courses}{Thermal Physics, Statics, Dynamics, Intro to 3D modeling and analysis, Computational Physics,
+      %   Condensed Matter Physics, Mathematical Physics, Experimental Physics, Electromagnetism, Astrophysics, Quantum Mechanics}
+      % \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%--------PROGRAMMING SKILLS------------
+%--------SKILLS------------
 \section{Skills}
-    \textbf{Software}{: Solidworks, Autodesk Inventor, Autodesk Fusion 360, Autodesk HSM, Microsoft Office, Jira, Confluence, Infor ERP, GitHub, LTSpice} \\
-    \textbf{Programming Languages}{: Python, MatLab, LaTeX, Java, HTML, CSS} \\
-    \textbf{Machines}{: 3D Printer, Laser Cutter, Lathe, Mill, Bandsaw, Drill Press, CNC Milling, MIG Welding }
+    \textbf{\small Software}{\small : NI VeriStand, HBM Perception, PCAN Explorer, Solidworks, Altium, Microsoft Office, Jira, Confluence, LTSpice, Python} \\
+    \textbf{\small Hardware}{\small : NI cRIO, NI cDAQ, HBM Genesis DAQ} \\
+%   \textbf{Programming Languages}{: Python, MatLab, LaTeX} \\
+    \textbf{\small Manufacturing}{\small : SMD Soldering, PCB Rework, CNC Machining, rapid prototyping}
 
+\section{Certifications}
+    {NFPA 70E Arc Flash and Electrical Safety, Overhead Crane Rigging and Operation, WHA Level 2 Hydrogen System Design and Safety, AED and First Aid}
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-    {Picnic Works}{Seattle, WA}
-    {Test Technician I \& Food Spply Chain Lead}{September 2021 - Present}
+  \resumeSubheading
+    {ZeroAvia}{Everett, WA}
+    {Electric Propulsion System Test Engineer}{December 2024 - Present}
     \resumeItemListStart
       \item{
-        Develop test fixtures and procedures for evaluating electromechanical devices
+        Design and assemble low and high voltage interconnects in accordance with IPC/WHMA-A-620 for ZA601 motor and inverter
       }
       \item{
-        Utilize Solidworks CAD and 3D printing for rapid prototyping of test fixtures
+        Establish interface control documents for current gen ZA601 and next gen ZA2000 inverters and motors
       }
       \item{
-        Respond to emergency engineering support requests for on site Picnic Pizza Station system failures
+        Design and mangage safety systems for high voltage, high power test stations for ZA150 fuel cell and ZA601, ZA2000 motor and inverter
       }
       \item{
-        Facilitate regulatory testing of the Picnic Pizza Station
+        Manage and maintain medium power 240kW back-to-back ZA601 inverter test stand used for experimetal testing of hardware and software
       }
       \item{
-        Perform final quality assurance checks on the Picnic Pizza Station
+        Perform environmental and HALT testing on ZA601 inverter in accordance to RTCA-DO160 for airworthiness certifiaction
       }
       \item{
-        Manage food supply chain for ingredients used to test the Picnic Pizza Station
-      }
-      \item{
-        Demonstrate the Picnic Pizza Station to potential business partners and customers
-      }
-      \item{
-        Provide on site support for the Picnic Pizza Station at customer locations
+        Collaborate with leading industry suppliers on next generation aerospace interconnects
       }
     \resumeItemListEnd
 
+  \resumeSubheadingextra  
+    {Electric Propulsion System Test Technician}{December 2022 - December 2024}
+    \resumeItemListStart
+      \item{
+        Developed and assembled test fixtures for evaluating ZA601 electric propulsion inverters and motors
+      }
+      \item{
+        Designed and built automated test systems for component level production testing for the ZA601 inverter
+      }
+      \item{
+        Performed component level rework in accordance with IPC-J-STD-001 on ZA601 inverter and motor
+      }
+      
+    \resumeItemListEnd
+    
     \resumeSubheading
-      {Chili Basil Thai Grill}{Lynnwood, WA}
-      {Kitchen \& Maintenance Staff}{September 2012 - September 2021}
-      \resumeItemListStart
-        \item{
-          Maintained internal network and provided technical support for computers
-        }
-        \item{
-          Performed kitchen tasks such ingredient prep, cooking, and dish-washing
-        }
-        \item{
-          General repair and maintenance of restaurant and restaurant equipment
-        }
-      \resumeItemListEnd
+    {Picnic Works}{Seattle, WA}
+    {Test Technician I \& Food Supply Chain Lead}{September 2021 - October 2022}
+    \resumeItemListStart
+      \item{
+        Developed procedures and test fixtures utilizing rapid prototyping to evaluate electromechanical devices
+      }
+      % \item{
+      %   Respond to emergency engineering support requests for on site Picnic Pizza Station system failures
+      % }
+      % \item{
+      %   Facilitate regulatory testing of the Picnic Pizza Station
+      % }
+      \item{
+        Performed final quality assurance checks on the Picnic Pizza Station
+      }
+      \item{
+        Managed food supply chain for ingredients used to test the Picnic Pizza Station
+      }
+      % \item{
+      %   Demonstrate the Picnic Pizza Station to potential business partners and customers
+      % }
+      % \item{
+      %   Provide on site support for the Picnic Pizza Station at customer locations
+      % }
+    \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Chili Basil Thai Grill}{Lynnwood, WA}
+    %   {Kitchen \& Maintenance Staff}{September 2012 - September 2021}
+    %   \resumeItemListStart
+    %     \item{
+    %       Maintained internal network and provided technical support for computers
+    %     }
+    %     \item{
+    %       Performed kitchen tasks such ingredient prep, cooking, and dish-washing
+    %     }
+    %     \item{
+    %       General repair and maintenance of restaurant and restaurant equipment
+    %     }
+    %   \resumeItemListEnd
 
     % \resumeSubheading
     %   {UW Bothell Makerspace}{Bothell, WA}
@@ -195,37 +241,52 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    
-    \resumeSubheading
-      {Automated Stepper Motor Torque Testing Fixtures}{May 2022 - Present}
-      {Test Fixtures \& Hardware}{}
-        \resumeItemListStart
-          \item{
-            Designed and manufactured test fixtures to automatically measure peak stepper motor torque in several
-            Picnic Pizza Station subsystems
-          }
-          \item{
-            Implemented custom python scripts for complex data analysis of raw data output from strain gauge
-          }
-          \item{
-            Developed testing protocols for evaluating new stepper motors for use on future Picnic Pizza Station revisions
-          }
-        \resumeItemListEnd
 
-    \resumeSubheading
-      {Semiconductor Materials for Ultra High Frequency Transistors}{April 2021 - June 2021}
-      {Capstone}{}
+      \resumeSubheading
+      {Low Power 10kW Static Load Test System}{}
+      {ZeroAvia - Test Fixtures \& Hardware}{Dec 2022 - Present}
         \resumeItemListStart
           \item{
-            Performed dozens of LTSpice simulations across five different transistor models with various parameters
+            Designed and manufactured a high voltage low power test platform for evaluating new hardware and sofware for ZA601 inverter
           }
           \item{
-            Developed test procedures to compare ultra high frequency behavior of semiconductor materials
+            Developed a robust interlock and safety system to ensure safe operating conditions for users
           }
           \item{
-            Authored and Presented a scientific paper on the findings of this project
+            Reengineered various times to become a very flexible test platfrom used for ZA601 and ZA2000 inverter testing, ZA150 compressor testing, and environmental and HALT testing
           }
         \resumeItemListEnd
+    
+    % \resumeSubheading
+    %   {Automated Stepper Motor Torque Testing Fixtures}{May 2022 - October 2022}
+    %   {Picnic Works - Test Fixtures \& Hardware}{}
+    %     \resumeItemListStart
+    %       \item{
+    %         Designed and manufactured test fixtures to automatically measure peak stepper motor torque in several
+    %         Picnic Pizza Station subsystems
+    %       }
+    %       \item{
+    %         Implemented custom python scripts for complex data analysis of raw data output from strain gauge
+    %       }
+    %       \item{
+    %         Developed testing protocols for evaluating new stepper motors for use on future Picnic Pizza Station revisions
+    %       }
+    %     \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Semiconductor Materials for Ultra High Frequency Transistors}{April 2021 - June 2021}
+    %   {Capstone}{}
+    %     \resumeItemListStart
+    %       \item{
+    %         Performed dozens of LTSpice simulations across five different transistor models with various parameters
+    %       }
+    %       \item{
+    %         Developed test procedures to compare ultra high frequency behavior of semiconductor materials
+    %       }
+    %       \item{
+    %         Authored and Presented a scientific paper on the findings of this project
+    %       }
+    %     \resumeItemListEnd
 
     % \resumeSubheading
     %   {UW Bothell ASME Hackathon}{2017}
